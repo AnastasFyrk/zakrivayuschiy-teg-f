@@ -571,9 +571,8 @@
           >
             <use href="./svg/floppy.svg#floopy-disk"></use>
           </svg>
-        <form method="dialog">
+
           <span class="button__text">Сохранить на память</span>
-        </form>
         </button>
       </span>
       <dialog id="dialog-id" class="dialog background">
@@ -589,13 +588,15 @@
           </svg>
           <h3 class="dialog__title">Вставьте дискету, чтобы продолжить</h3>
         </div>
-        <button
-          class="dialog__close-button card__button"
-          type="button"
-          onclick="window['dialog-id'].close();"
-        >
-          <span class="button__text">Ок</span>
-        </button>
+        <form method="dialog">
+          <button
+            class="dialog__close-button card__button"
+            type="button"
+            onclick="window['dialog-id'].close();"
+          >
+            <span class="button__text">Ок</span>
+          </button>
+        </form>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
