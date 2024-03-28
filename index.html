@@ -70,7 +70,7 @@
               <p>Место для ваших воспоминаний о начале обучения.</p>
 
               <span class="card__text-like">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
                     class="like-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__button card__like-button">
+                <button type="button" class="button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </span>
@@ -167,7 +167,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__button card__like-button">
+                <button class="button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </span>
@@ -228,7 +228,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__button card__like-button">
+                <button class="button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </span>
@@ -291,7 +291,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__button card__like-button">
+                <button class="button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </span>
@@ -355,7 +355,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__button card__like-button">
+                <button class="button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </span>
@@ -416,7 +416,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__button card__like-button">
+                <button class="button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </span>
@@ -479,7 +479,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__button card__like-button">
+                <button class="button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </span>
@@ -546,7 +546,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__button card__like-button">
+                <button class="button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </span>
@@ -554,13 +554,12 @@
           </article>
         </li>
       </ul>
-    </main>
-    <footer class="footer card__button">
-      <span class="footer__button">
+      <span class="button-save button">
         <button
+          type="button"
           onclick="window['dialog-id'].showModal();"
           aria-controls="dialog-id"
-          class="card__button-save button__text"
+          class="button-save-text button__text"
         >
           <svg
             width="40"
@@ -572,33 +571,33 @@
             <use href="./svg/floppy.svg#floopy-disk"></use>
           </svg>
 
-          <span class="button__text">Сохранить на память</span>
+          <span class="button__text">Сохранить на&nbsp;память</span>
         </button>
       </span>
-      <dialog id="dialog-id" class="dialog background">
-        <div class="dialog__content button__text">
-          <svg
-            width="39"
-            height="39"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 39 39"
-            class="floopy"
-          >
-            <use href="./svg/floppy.svg#floopy-disk"></use>
-          </svg>
-          <h3 class="dialog__title">Вставьте дискету, чтобы продолжить</h3>
-        </div>
-        <form method="dialog">
-          <button
-            class="dialog__close-button card__button"
-            type="button"
-            onclick="window['dialog-id'].close();"
-          >
-            <span class="button__text">Ок</span>
-          </button>
-        </form>
-      </dialog>
-    </footer>
+    </main>
+    <dialog id="dialog-id" class="dialog background">
+      <div class="dialog__content button__text">
+        <svg
+          width="39"
+          height="39"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 39 39"
+          class="floopy"
+        >
+          <use href="./svg/floppy.svg#floopy-disk"></use>
+        </svg>
+        <h3 class="dialog__title">Вставьте дискету, чтобы продолжить</h3>
+      </div>
+      <form method="dialog">
+        <button
+          class="dialog__close-button button"
+          type="button"
+          onclick="window['dialog-id'].close();"
+        >
+          <span class="button__text">Ок</span>
+        </button>
+      </form>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

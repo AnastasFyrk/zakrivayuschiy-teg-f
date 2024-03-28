@@ -41,3 +41,11 @@
     opacity: 1;
   }
 }
+
+.like-icon.is-liked .heart {
+  animation: flash 0.3s 0.1s alternate ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  animation: spark 0.3s ease-in 0.3s alternate;
+}
