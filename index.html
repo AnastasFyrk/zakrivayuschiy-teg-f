@@ -554,26 +554,24 @@
           </article>
         </li>
       </ul>
-      <span class="button-save button">
-        <button
-          type="button"
-          onclick="window['dialog-id'].showModal();"
-          aria-controls="dialog-id"
-          class="button-save-text button__text"
+      <button
+        type="button"
+        onclick="window['dialog-id'].showModal();"
+        aria-controls="dialog-id"
+        class="button-save button button__text"
+      >
+        <svg
+          width="40"
+          height="40"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 40 40"
+          class="floopy"
         >
-          <svg
-            width="40"
-            height="40"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 40 40"
-            class="floopy"
-          >
-            <use href="./svg/floppy.svg#floopy-disk"></use>
-          </svg>
+          <use href="./svg/floppy.svg#floopy-disk"></use>
+        </svg>
 
-          <span class="button__text">Сохранить на&nbsp;память</span>
-        </button>
-      </span>
+        <span class="button__text">Сохранить на&nbsp;память</span>
+      </button>
     </main>
     <dialog id="dialog-id" class="dialog background">
       <div class="dialog__content button__text">
