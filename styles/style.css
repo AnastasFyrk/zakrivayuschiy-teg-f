@@ -133,14 +133,14 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 52px;
+  gap: 48px;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 51px;
+  gap: 48px;
 }
 
 .card {
@@ -225,7 +225,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 26px;
+  gap: 28px;
   font-size: 18px;
 }
 
@@ -238,7 +238,8 @@ button:focus {
 
 .button {
   border: 2px solid var(--accent-color);
-  color: var(--accent-color);
+  color: var(--color-hover, #fff);
+  background-color: var(--bg-color);
   position: relative;
   z-index: 1;
   transition: box-shadow 0.5s ease-in-out;
@@ -261,7 +262,7 @@ button:focus {
   stroke: var(--color-hover);
 }
 
-.button::after {
+.button::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -274,7 +275,7 @@ button:focus {
   transition: transform 0.5s ease-in-out;
 }
 
-.button:hover::after {
+.button:hover::before {
   transform: scaleX(1);
 }
 
@@ -321,7 +322,6 @@ button:focus {
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: transparent;
 }
 
 .button-save .floopy {
